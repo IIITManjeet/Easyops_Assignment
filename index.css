@@ -1,0 +1,161 @@
+body {
+ font-family: 'Noto Sans Wancho', sans-serif;
+}
+
+.wrapper {
+ margin: 0px auto;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.inner {
+ background: white;
+ box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px, rgb(0 0 0 / 12%) 0px 3px 6px 0px;
+ padding: 48px;
+ border-radius: 10px;
+ margin: 80px 50px 50px 50px;
+}
+
+form.myTable input{
+ font-size: 16px;
+ line-height: 28px;
+ padding: 8px 16px;
+ width: 100%;
+ min-height: 44px;
+ border: unset;
+ border-radius: 4px;
+ outline-color: rgb(84 105 212 / 0.5);
+ background-color: rgb(255, 255, 255);
+ box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+ margin-top: 2px;
+}
+form.myTable .data{
+ display: flex;
+ flex-direction: row;
+ gap:5px;
+}
+form.mytable{
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ margin: auto;
+ justify-content: center;
+}
+form.mytable .save{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+}
+
+button#save {
+ background-color: #98FB98;
+ color:black;
+ font-weight: 600;
+ cursor: pointer;
+ font-size: 16px;
+ line-height: 28px;
+ padding: 8px 16px;
+ width: 100%;
+ min-height: 44px;
+ border: unset;
+ border-radius: 4px;
+ outline-color: #98FB98;
+}
+
+#myData {
+ font-family: 'Noto Sans Wancho', sans-serif;
+ border-collapse: collapse;
+ width: 100%;
+}
+
+#myData td,
+#myData th {
+ border: 1px solid #ddd;
+ padding: 20px;
+}
+
+#myData tr:nth-child(even) {
+ background-color: #f2f2f2;
+}
+
+#myData tr:hover {
+ background-color: #ddd;
+}
+
+#myData th {
+ padding-top: 12px;
+ padding-bottom: 12px;
+ text-align: left;
+ background-color:#555;
+ color: white;
+}
+
+fa-trash:hover {
+ color: red;
+}
+
+.overlow {
+ height: 300px;
+ display: flex;
+ flex-direction: column;
+ overflow-y: scroll;
+ gap: 10px;
+}
+.example{
+ border:none;
+ border-radius:10px;
+ width: 60%;
+ display: flex;
+}
+.example input[type=text] {
+ padding: 10px;
+ font-size: 17px;
+ height: 30px;
+ border-radius: 10px;
+ border: none;
+ float: left;
+ flex:0.99;
+ background: #f1f1f1;
+}
+
+/* Style the submit button */
+.table_sortable thead th.desc:after {
+ content: '  ↑';
+}
+
+.table_sortable thead th.asc:after {
+ content: '  ↓';
+}
+.example .button {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ float: left;
+ flex: 0.01;
+ border:none;
+ padding: 10px;
+ height: 20px;
+ border-radius: 10px;
+ font-size: 17px;
+ cursor: pointer;
+}
+
+.example::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+::-webkit-scrollbar {
+ width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+ background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+ background: #555;
+}

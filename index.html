@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+
+<head>
+ <title>On Form Submit Show Result Using jQuery</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="./index.css">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Wancho&display=swap" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <div class="container">
+
+  <div class="wrapper">
+   <div class="inner">
+    <form class="myTable">
+     <p>
+      <label>Person's Name</label>
+      <div class="data">
+        <input class="name" type="text" id="firstName" 
+          placeholder="First">
+        <input class="name" type="text" id="lastName" 
+         placeholder="Last">
+      </div>
+     </p>
+
+     <p>
+      <label>Contact Number</label>
+      <input class="number" type="text" id="number">
+     </p>
+
+     <button type="button" class="save" id="save">Save</button>
+    </form>
+
+   </div>
+
+   <div class="inner overlow">
+   <div class="example">
+     <div class="button"><i class="fa fa-search"></i></div>
+    <input type="text" id="search" class="form-control" placeholder="Search..">
+   </div>
+    <table class="data" id="myData">
+     <thead>
+      <tr class="dataRow">
+       <th >Id</th>
+       <th >Name</th>
+       <th >Contact</th>
+       <th >Delete</th>
+      </tr>
+     </thead>
+
+     <tbody id="myTable"> </tbody>
+    </table>
+
+   </div>
+
+  </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+<script src="/path/to/dist/tableSortable.min.js"></script>
+<script src="https://unpkg.com/jquery-tablesortable"></script>
+ <script src="./script.js"></script>
+
+</body>
+
+</html>
